@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>YOGA FOR HEALTH</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #main {
+            background-color: #F7CAC9;
+            height: 100%;
+            width: 100%;
+        }
+
+        #main .parent {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #main .parent .box1 {
+            height: auto;
+            margin: 30px;
+            width: 600px;
+        }
+
+        #main .parent .box1 h1 {
+            color: #343148;
+            font-size: 63px;
+            margin-bottom: 20px;
+            font-weight: 500px;
+        }
+
+        #main .parent .box1 p {
+            color: #343148;
+            font-size: 20px;
+            font-weight: 100;
+            margin-bottom: 28px;
+        }
+
+        #main .parent .box1 .btn {
+            background-color: #343148;
+            color: #F7CAC9;
+            letter-spacing: 1px;
+            padding: 12px 30px;
+            border: none;
+            margin-right: 10px;
+        }
+
+        #main .parent .box1 img {
+            height: 90%;
+            width: 90%;
+            background-size: cover;
+            object-fit: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .main2 {
+            margin: 80px 0;
+            background-color: #fff !important;
+        }
+
+        #box {
+            background-color: #fff;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            font-size: larger;
+        }
+
+        #box .parent {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #box .parent .box1 {
+            background-color: #fff;
+            box-shadow: 10px 10px 10px grey;
+            height: auto;
+            width: 300px;
+            margin: 30px;
+        }
+
+        #box .parent .box1 .img-box {
+            height: 90px;
+            width: 90px;
+            background-color: #F7CAC9;
+            border-radius: 50%;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        #box .parent .box1 img {
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            object-fit: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #box .parent .box1 .heading {
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            color: #343148;
+        }
+
+        #box .parent .box1 .heading p {
+            padding: 20px;
+            color: #797979;
+            font-weight: 700;
+        }
+
+        #yoga {
+            margin: 100px 0;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            font-size: larger;
+            background-color: #fff;
+            padding: 30px 0;
+        }
+
+        #yoga h1 {
+            align-items: center;
+            padding: 20px;
+        }
+
+        #yoga .btn {
+            padding: 6px 12px;
+            color: rgb(52, 49, 72);
+            background: none;
+            margin: 5px;
+            transition: 0.3s ease-in-out;
+        }
+
+        #yoga .btn:hover {
+            background-color: rgb(52, 49, 72);
+            color: #F7CAC9;
+        }
+
+        #yoga .parent {
+
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+
+        #yoga .parent .box {
+            background-color: #fff;
+            height: auto;
+            width: 400px;
+            margin: 10px;
+            padding: 0 0 27px 0px;
+            box-shadow: 10px 10px 10px grey;
+        }
+
+        #yoga .parent .box .img-1 img {
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            object-fit: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #yoga .parent .box .name h4 {
+            color: #343148;
+            margin: 10px 21px;
+            text-align: left;
+        }
+
+        #yoga .parent .box .img-2 img {
+            height: 20px;
+            width: 20px;
+            margin: 15px 0px 0px -271px;
+        }
+
+        #yoga .parent .box .week {
+            font-weight: 100;
+            color: #979797;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #yoga .parent .box .cont {
+            width: 300px;
+            height: auto;
+        }
+
+        #yoga .parent .box .week img {
+            height: 18px;
+            width: 18px;
+        }
+
+        #discount {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(#bebebe95, #f7cac9d2), url(./image/pexels-prasanth-inturi-1051838.jpg);
+            background-size: cover;
+            object-fit: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 100px 0;
+        }
+
+        #discount .parent {
+            height: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #discount .parent .box {
+            height: auto;
+            width: 700px;
+            text-align: center;
+        }
+
+        #discount .parent .box h5 {
+            color: #343148;
+            font-size: 20px;
+            margin: 10px 0;
+
+        }
+
+        #discount .parent .box h1 {
+            color: #343148;
+            font-size: 60px;
+            font-weight: 700px;
+            margin: 10px 0;
+        }
+
+        #discount .parent .box h4 {
+            color: #343148;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+
+        #discount .parent .box .btn {
+            background-color: #343148;
+            color: #F7CAC9;
+            margin: 20px 0;
+            padding: 15px 15px;
+            border: none;
+        }
+
+        #price {
+            height: 100%;
+            width: 100%;
+        }
+
+        #price h1 {
+            font-size: 50px;
+            font-weight: 700;
+            text-align: center;
+            padding: 20px 0px;
+            color: #343148;
+        }
+
+        #price .parent {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            
+        }
+
+        #price .parent .box {
+
+            height: auto;
+            width: 300px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 10px 10px 10px grey;
+            transition: 0.03s ease-in-out;
+            overflow: hidden;
+
+        }
+        #price .parent .box:hover{
+            transform: scale(1.2);
+        }
+
+        #price .parent .box .box1 {
+            background-color: #F7CAC9;
+            height: 150px;
+            width: 100%;
+            
+        }
+        
+
+
+        #price .parent .box .box1 h2 {
+            color: #343148;
+            padding: 30px 0;
+            font-size: 25px;
+            font-weight: 700px;
+        }
+
+        #price .parent .box .box1 .pri {
+            margin: -55px 0px 0px 0px;
+        }
+
+        #price .parent .box .box1 .pri .p1 {
+            font-weight: lighter;
+        }
+
+        #price .parent .box .box1 .pri .p2 {
+            color: #343148;
+            font-size: 45px;
+            font-weight: 700px;
+        }
+
+        #price .parent .box .box1 .pri .p3 {
+            font-size: 20px;
+            font-weight: lighter;
+        }
+
+        #price .parent .box ul {
+            color: #797979;
+            font-size: 20px;
+            font-weight: lighter;
+            padding: 30px 0;
+        }
+
+        #price .parent .box ul hr {
+            margin: 10px 0;
+        }
+
+        #price .parent .box .btn {
+            background-color: #F7CAC9;
+            color: #343148;
+            padding: 10px 20px;
+            border: none;
+            font-size: medium;
+            margin: 10px;
+        }
+
+        #price .parent .box .main {
+            background: #343148 !important;
+        }
+
+        #price .parent .box .main .head {
+            color: #F7CAC9;
+        }
+
+        #price .parent .box .main .color {
+            color: #F7CAC9 !important;
+        }
+
+        #price .parent .box .css {
+            background-color: #343148 !important;
+            color: #F7CAC9 !important;
+
+        }
+
+
+
+        #trainer {
+            height: 100%;
+            width: 100%;
+            padding: 100px 0;
+        }
+
+        #trainer h1 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700px;
+        }
+
+        #trainer .parent {
+
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #trainer .parent .box {
+            background-color: #fff;
+            height: auto;
+            width: 300px;
+            padding: 10px 10px;
+            margin: 10px;
+            transition: 0.3s ease-in-out;
+        }
+
+        #trainer .parent .box:hover {
+            margin-top: -10px;
+            box-shadow: 10px 10px 10px grey;
+        }
+
+        #trainer .parent .box .img-1 {
+            height: 100%;
+            width: 100%;
+        }
+
+        #trainer .parent .box .img-1 img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #trainer .parent .box h2 {
+
+            color: #343148;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 20px 0px 5px 0px;
+            text-align: center;
+
+        }
+
+        #trainer .parent .box h3 {
+            color: #797979;
+            text-align: center;
+            font-weight: lighter;
+            font-size: medium;
+        }
+
+        #article {
+            height: 100%;
+            width: 100%;
+        }
+
+        #article .topic {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #article .parent {
+
+            height: 100%;
+            width: 100%;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #article .parent .box {
+            background-color: #fff;
+            height: 400px;
+            width: 350px;
+            margin: 10px;
+            box-shadow: 10px 10px 10px grey;
+        }
+
+        #article .parent .box .img-1 {
+            height: 50%;
+            width: 100%;
+        }
+
+        #article .parent .box .img-1 img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #article .parent .box h1 {
+            color: #343148;
+            font-size: 22px;
+            font-weight: 500;
+            padding: 16px 0px 12px 20px;
+        }
+
+        #article .parent .box .section img {
+            color: #929292;
+            padding: 0px 0px 0px 0px;
+            margin: 0px 0px 0px 18px;
+            height: 12px;
+            width: 12px;
+        }
+
+        #article .parent .box p {
+            color: #929292;
+            text-align: center;
+            padding: 16px 10px;
+        }
+
+        #article .parent .box .btn {
+            font-size: medium;
+            margin: 0px 20px;
+            background: none;
+            border: none;
+            color: #343148;
+            font-weight: 600;
+            transition: 0.3s ease-in-out;
+        }
+
+        #article .parent .box .btn:hover {
+            color: #F7CAC9;
+        }
+
+        #footer {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(#343148eb, #797979b6), url(./images/pexels-elina-fairytale-3822169.jpg);
+            background-size: cover;
+            object-fit: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+
+        #footer .parent {
+            height: 100%;
+            width: 100%;
+        
+        }
+
+        #footer .parent h1 {
+            color: #F7CAC9;
+            font-size: 60px;
+            font-weight: 700px;
+            text-align: center;
+            padding: 60px 0px 30px 0px;
+        }
+        #footer .parent h1 span{
+            color: white;
+        }
+        #footer .parent h3 {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600px;
+            text-align: center;
+        }
+
+        #footer .parent p {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 800px;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        #footer .parent p i {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 25px;
+            padding: 10px 0;
+        }
+
+      
+
+        #footer .parent .site {
+            padding: 20px;
+            justify-content: space-between;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="main">
+        <div class="parent">
+            <div class="box1">
+                <h1>Yoga Practice For <br> Good Health</h1>
+                <p>Lorem ipsum dolor sit amet elit. Phasell nec pretum mi. Curabi ornare elit non. Aliqua metus tortor
+                    auctor quis sem.</p>
+                <button class="btn">Join Now</button>
+                <button class="btn">Contact Us</button>
+            </div>
+            <div class="box1">
+                <img src="./image/hero.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="main" class="main2">
+        <div class="parent">
+            <div class="box1">
+                <img src="./image/about.png" alt="">
+            </div>
+            <div class="box1">
+                <h4>Learn About Us</h4>
+                <h1>Welcome to Yooga</h1>
+                <p>Lorem ipsum dolor sit amet elit. Phasell nec pretum mi. Curabi ornare velit non. Aliqua metus tortor
+                    auctor quis sem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem laborum quo, animi modi sequi,
+                    provident quis labore mollitia nesciunt aperiam reprehenderit! Ex alias distinctio mollitia odit,
+                    eligendi obcaecati iure iste!</p>
+                <button class="btn">Learn More</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="box">
+        <h1>Yoga For Health</h1>
+        <div class="parent">
+            <div class="box1">
+                <div class="img-box">
+                    <img src="./image/yoga-pose (1).png" alt="">
+                </div>
+                <div class="heading">
+                    <h3>Heal Emotions</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit voluptates possimus voluptatum
+                        commodi sunt..</p>
+                </div>
+            </div>
+
+            <div class="box1">
+                <div class="img-box">
+                    <img src="./image/yoga.png" alt="">
+                </div>
+                <div class="heading">
+                    <h3>Body Refreshs</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit voluptates possimus voluptatum
+                        commodi sunt..</p>
+                </div>
+            </div>
+
+            <div class="box1">
+                <div class="img-box">
+                    <img src="./image/yoga-pose.png" alt="">
+                </div>
+                <div class="heading">
+                    <h3>Mind & Serenity</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit voluptates possimus voluptatum
+                        commodi sunt..</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="box" class="box2">
+        <div class="parent">
+            <div class="box1">
+                <div class="img-box">
+                    <img src="./image/yoga-pose (1).png" alt="">
+                </div>
+                <div class="heading">
+                    <h3>Heal Emotions</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit voluptates possimus voluptatum
+                        commodi sunt..</p>
+                </div>
+            </div>
+
+            <div class="box1">
+                <div class="img-box">
+                    <img src="./image/yoga.png" alt="">
+                </div>
+                <div class="heading">
+                    <h3>Body Refreshs</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit voluptates possimus voluptatum
+                        commodi sunt..</p>
+                </div>
+            </div>
+
+            <div class="box1">
+                <div class="img-box">
+                    <img src="./image/yoga-pose.png" alt="">
+                </div>
+                <div class="heading">
+                    <h3>Mind & Serenity</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit voluptates possimus voluptatum
+                        commodi sunt..</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="yoga">
+        <h1>Yoga Class Shedule</h1>
+        <button class="btn">All Classes</button>
+        <button class="btn">Pilates Yoga</button>
+        <button class="btn">Hatha Yoga</button>
+        <button class="btn">Vinayasa Yoga</button>
+        <div class="parent">
+            <div class="box">
+                <div class="img-1">
+                    <img src="./image/class-1.jpg" alt="">
+                </div>
+                <div class="cont">
+                    <div class="name">
+                        <h4>Pilates Yoga</h4>
+                    </div>
+                    <div class="week">
+                        <div class="part1">
+                            <img src="./image/calendar.png" alt=""> Sun, Tue, Thu
+                        </div>
+                        <div class="part2">
+                            <img src="./image/clock.png" alt=""> 9:00 - 10:00
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="img-1">
+                    <img src="./image/class-2.jpg" alt="">
+                </div>
+                <div class="cont">
+                    <div class="name">
+                        <h4>Iyengar Yoga</h4>
+                    </div>
+                    <div class="week">
+                        <div class="part1">
+                            <img src="./image/calendar.png" alt=""> Sun, Tue, Thu
+                        </div>
+                        <div class="part2">
+                            <img src="./image/clock.png" alt=""> 9:00 - 10:00
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="img-1">
+                    <img src="./image/class-3.jpg" alt="">
+                </div>
+                <div class="cont">
+                    <div class="name">
+                        <h4>Ashtanga yoga</h4>
+                    </div>
+                    <div class="week">
+                        <div class="part1">
+                            <img src="./image/calendar.png" alt=""> Sun, Tue, Thu
+                        </div>
+                        <div class="part2">
+                            <img src="./image/clock.png" alt=""> 9:00 - 10:00
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="parent">
+            <div class="box">
+                <div class="img-1">
+                    <img src="./image/class-4.jpg" alt="">
+                </div>
+                <div class="cont">
+                    <div class="name">
+                        <h4>Hatha Yoga</h4>
+                    </div>
+                    <div class="week">
+                        <div class="part1">
+                            <img src="./image/calendar.png" alt=""> Sun, Tue, Thu
+                        </div>
+                        <div class="part2">
+                            <img src="./image/clock.png" alt=""> 9:00 - 10:00
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="img-1">
+                    <img src="./image/class-5.jpg" alt="">
+                </div>
+                <div class="cont">
+                    <div class="name">
+                        <h4>Kundalini Yoga</h4>
+                    </div>
+                    <div class="week">
+                        <div class="part1">
+                            <img src="./image/calendar.png" alt=""> Sun, Tue, Thu
+                        </div>
+                        <div class="part2">
+                            <img src="./image/clock.png" alt=""> 9:00 - 10:00
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="img-1">
+                    <img src="./image/class-6.jpg" alt="">
+                </div>
+                <div class="cont">
+                    <div class="name">
+                        <h4>Vinyasa yoga</h4>
+                    </div>
+                    <div class="week">
+                        <div class="part1">
+                            <img src="./image/calendar.png" alt=""> Sun, Tue, Thu
+                        </div>
+                        <div class="part2">
+                            <img src="./image/clock.png" alt=""> 9:00 - 10:00
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="discount">
+        <div class="parent">
+            <div class="box">
+                <h5>Awesome Discount</h5>
+                <h1>Get 30% Discount for all Classes</h1>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur
+                    facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra
+                    quis sem. Curabitur non nisl nec nisi scelerisque maximus.
+                </h4>
+                <button class="btn">Join Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="price">
+        <h1>Yoga Pricing Plan</h1>
+        <div class="parent">
+            <div class="box">
+                <div class="box1">
+                    <h2>BASIC</h2>
+                    <h2 class="pri">
+                        <small class="p1"><sup>$</sup></small>
+                        <span class="p2">49</span>
+                        <span class="p3">/ mo</span>
+                    </h2>
+                </div>
+                <ul type="none">
+                    <li>Personal Trainer</li>
+                    <hr>
+                    <li>Special Class</li>
+                    <hr>
+                    <li>Free Tutorials</li>
+                    <hr>
+                    <li>Group Training</li>
+                </ul>
+                <button class="btn">Join Now</button>
+            </div>
+
+            <div class="box">
+                <div class="main box1 ">
+                    <h2 class="head">STANDARD</h2>
+                    <h2 class="pri">
+                        <small class="p1 color"><sup>$</sup></small>
+                        <span class="p2 color">99</span>
+                        <span class="p3 color">/ mo</span>
+                    </h2>
+                </div>
+                <ul type="none">
+                    <li>Personal Trainer</li>
+                    <hr>
+                    <li>Special Class</li>
+                    <hr>
+                    <li>Free Tutorials</li>
+                    <hr>
+                    <li>Group Training</li>
+                </ul>
+                <button class="btn css">Join Now</button>
+            </div>
+
+            <div class="box">
+                <div class="box1">
+                    <h2>PREMIUM</h2>
+                    <h2 class="pri">
+                        <small class="p1"><sup>$</sup></small>
+                        <span class="p2">149</span>
+                        <span class="p3">/ mo</span>
+                    </h2>
+                </div>
+                <ul type="none">
+                    <li>Personal Trainer</li>
+                    <hr>
+                    <li>Special Class</li>
+                    <hr>
+                    <li>Free Tutorials</li>
+                    <hr>
+                    <li>Group Training</li>
+                </ul>
+                <button class="btn">Join Now</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="trainer">
+        <h1>Expert Yoga Trainer</h1>
+        <div class="parent">
+            <div class="box">
+                <div class="img-1">
+                    <img src="./image/team-1.jpg" alt="">
+                </div>
+                <h2>Millie Harper</h2>
+                <h3>Yoga Teacher</h3>
+            </div>
+
+            <div class="box">
+                <div class="img-1">
+                    <img src="./image/team-2.jpg" alt="">
+                </div>
+                <h2>Lilly Fry</h2>
+                <h3>Yoga Teacher</h3>
+            </div>
+
+            <div class="box">
+                <div class="img-1">
+                    <img src="./image/team-3.jpg" alt="">
+                </div>
+                <h2>Elise Moran</h2>
+                <h3>Yoga Teacher</h3>
+            </div>
+
+            <div class="box">
+                <div class="img-1">
+                    <img src="./image/team-4.jpg" alt="">
+                </div>
+                <h2>Kate Glover</h2>
+                <h3>Yoga Teacher</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="article">
+        <h1 class="topic">Latest Yoga Article</h1>
+        <div class="parent">
+            <div class="box">
+                <div class="img-1">
+                    <img src="./image/blog-1.jpg" alt="">
+                </div>
+                <h1>Lorem ipsum dolor</h1>
+                <div class="section">
+                    <span>
+                        <img src="./image/calendar.png" alt=""> Body Fitness
+                    </span>
+                    <span>
+                        <img src="./image/calendar.png" alt=""> 01-jan-2045
+                    </span>
+                    <span>
+                        <img src="./image/bubble-chat.png" alt=""> 5
+                    </span>
+                </div>
+                <p>Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus
+                    tortor</p>
+                <button class="btn">READ MORE ></button>
+            </div>
+
+            <div class="box">
+                <div class="img-1">
+                    <img src="./image/blog-4.jpg" alt="">
+                </div>
+                <h1>Lorem ipsum dolor</h1>
+                <div class="section">
+                    <span>
+                        <img src="./image/calendar.png" alt=""> Body Fitness
+                    </span>
+                    <span>
+                        <img src="./image/calendar.png" alt=""> 01-jan-2045
+                    </span>
+                    <span>
+                        <img src="./image/bubble-chat.png" alt=""> 5
+                    </span>
+                </div>
+                <p>Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus
+                    tortor</p>
+                <button class="btn">READ MORE ></button>
+            </div>
+
+            <div class="box">
+                <div class="img-1">
+                    <img src="./image/blog-3.jpg" alt="">
+                </div>
+                <h1>Lorem ipsum dolor</h1>
+                <div class="section">
+                    <span>
+                        <img src="./images/calendar.png" alt=""> Body Fitness
+                    </span>
+                    <span>
+                        <img src="./images/calendar.png" alt=""> 01-jan-2045
+                    </span>
+                    <span>
+                        <img src="./images/bubble-chat.png" alt=""> 5
+                    </span>
+                </div>
+                <p>Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus
+                    tortor</p>
+                <button class="btn">READ MORE ></button>
+            </div>
+    </section>
+
+
+    <section id="footer">
+        <div class="parent">
+            <h1>Y<span>oo</span>GA</h1>
+            <h3>123 Street, New York, USA</h3>
+            <p>+012 345 67890 | info@domain.com</p>
+            <p><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-facebook"></i><i
+                    class="fa-brands fa-youtube"></i><i class="fa-brands fa-instagram"></i><i
+                    class="fa-brands fa-linkedin"></i></p>
+            <hr>
+            <div class="site">
+                <p>© Your Site Name, All Rights Reserved.</p>
+                <p>Designed By HTML Codex</p>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
